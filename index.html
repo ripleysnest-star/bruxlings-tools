@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free small-pet tools by Bruxlings</title><meta name="description" content="Free food checker, cage size checker and printable charts for nine small pets.">
+<link rel="canonical" href="https://bruxlings.com/pages/food-checker"><meta name="robots" content="noindex,follow">
+<link rel="preload" href="/assets/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/favicon.ico">
+<style>
+@font-face{font-family:Fraunces;src:url(/assets/fraunces.woff2) format('woff2');font-display:swap;font-weight:300 900}
+@font-face{font-family:Nunito;src:url(/assets/nunito.woff2) format('woff2');font-display:swap;font-weight:200 1000}
+:root{--berry:#BB163C;--plum:#6E1846;--ear:#FCD0CD;--site:#FAECF0;--cream:#FEFDF8;--line:#f0d8df;--ok:#2F7A4F;--okbg:#E3F1E6;--warn:#8A5A00;--warnbg:#FBEFD5;--ink:#3a1028}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 Nunito,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--plum);line-height:1.15;margin:0 0 .4em}
+a{color:var(--berry)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+.w{max-width:760px;margin:0 auto;padding:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 8px 24px #bb163c12}
+.ask{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:600 1.15rem/1.3 Fraunces,Georgia,serif;color:var(--plum)}
+select,input{font:inherit;font-size:16px;color:var(--ink);background:var(--cream);border:2px solid var(--ear);border-radius:12px;padding:9px 12px;min-height:46px}
+select:focus,input:focus{border-color:var(--berry);outline:0}
+.combo{position:relative;flex:1 1 200px;min-width:0}.combo input{width:100%}
+.list{position:absolute;z-index:5;left:0;right:0;top:calc(100% + 4px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 30px #6e18462a;max-height:300px;overflow:auto}
+.list li{display:flex;justify-content:space-between;gap:8px;padding:9px 10px;border-radius:10px;cursor:pointer}
+.list li[aria-selected=true],.list li:hover{background:var(--site)}
+.btn{font:700 1rem Nunito,sans-serif;border:0;border-radius:999px;background:var(--berry);color:#fff;padding:11px 20px;min-height:46px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--berry);border:2px solid var(--ear)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.chip{font:600 .9rem Nunito,sans-serif;border:1px solid var(--line);background:var(--site);color:var(--plum);border-radius:999px;padding:6px 12px;cursor:pointer;min-height:36px}
+.pill{display:inline-block;font:800 .8rem/1 Nunito,sans-serif;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:7px 12px}
+.v-yes{background:var(--okbg);color:var(--ok)}.v-sometimes{background:var(--warnbg);color:var(--warn)}.v-no{background:#fbe3ea;color:var(--berry)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none;margin-top:6px}
+.dot.v-yes{background:var(--ok)}.dot.v-sometimes{background:#d29a1e}.dot.v-no{background:var(--berry)}
+.res{margin-top:14px}.res h2{font-size:1.35rem;margin-top:10px}
+.often{font-weight:700;color:var(--plum);margin:.2em 0}
+.src{font-size:.9rem;color:#6b4a5b}.src a{color:#6b4a5b}
+.more{display:inline-block;margin-top:8px;font-weight:800}
+.muted{color:#6b4a5b;font-size:.92rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:14px;font-size:.85rem;color:#6b4a5b}
+.foot a{font-weight:800}
+.grp h3{font-size:1rem;margin:14px 0 6px}.grp ul{margin:0;padding:0;list-style:none;columns:2 180px;column-gap:16px}
+.grp li{break-inside:avoid;padding:2px 0}.grp button{all:unset;cursor:pointer;color:var(--ink);border-bottom:1px dotted #c79aab}
+.grp button:focus-visible{outline:2px solid var(--berry)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+@media (max-width:420px){.w{padding:10px}.card{padding:12px;border-radius:16px}.ask{font-size:1.05rem}}
+</style></head><body>
+<main class="w"><div class="card"><h1>Free small-pet tools for your website</h1>
+<p>Bruxlings makes these free for rescues, clubs, teachers and anyone helping small pets. Put them on your own site, or print the charts.</p>
+<ul><li><a href="/food/">Small pet food checker</a> (306 answers, nine animals, every answer sourced)</li><li><a href="/cage/">Small pet cage size checker</a> (nine animals, cm and inches)</li></ul>
+<h2>Printable food charts</h2><ul><li><a href="/charts/rats/">Rats</a></li><li><a href="/charts/rabbits/">Rabbits</a></li><li><a href="/charts/guinea-pigs/">Guinea pigs</a></li><li><a href="/charts/hamsters/">Hamsters</a></li><li><a href="/charts/mice/">Mice</a></li><li><a href="/charts/gerbils/">Gerbils</a></li><li><a href="/charts/chinchillas/">Chinchillas</a></li><li><a href="/charts/degus/">Degus</a></li><li><a href="/charts/ferrets/">Ferrets</a></li></ul>
+<p>The code to add a tool to your page is on <a href="https://bruxlings.com/pages/food-checker#embed">bruxlings.com</a>. The food answers are also an open data set: <a href="https://github.com/ripleysnest-star/small-pet-food-safety">small-pet-food-safety on GitHub</a>.</p>
+</div></main>
+
+</body></html>

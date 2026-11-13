@@ -101,7 +101,7 @@ function check(v){
   if(req[0])parts.push(['Longer side',dims[0],req[0],'len']);if(req[1])parts.push(['Shorter side',dims[1],req[1],'len']);
   parts.push(['Usable height',v.h,t.height_cm,'len']);
   var score=Math.min.apply(Math,parts.map(function(x){return x[1]/x[2]}));
-  return{t:t,parts:parts,score:score,verdict:score>=1.25?'Roomy':score>=1-1e-9?'Big enough':score>=.9?'A little small':'Too small'}}
+  return{t:t,parts:parts,score:score,verdict:score>=1.25?'Roomy':score>=1-1e-9?'Fits':score>=.9?'Tight':'Too small'}}
 function run(e){
   if(e)e.preventDefault();var a=A.value,n=Number(N.value),p=PR.value,fac=U.value==='in'?2.54:1,named=f.elements.mode.value==='named';
   var m=named?D.models.find(function(x){return x.id===M.value}):null;

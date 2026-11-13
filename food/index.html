@@ -63,7 +63,7 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:7px 8px;
 <script>
 (function(){
 var D=JSON.parse(document.getElementById('bxd').textContent),BX='https://bruxlings.com/pages/';
-var OFTEN={daily:'Daily',weekly:'About once or twice a week',occasional:'Now and then',never:'Never'},VERD={yes:'Yes',sometimes:'Sometimes',no:'No'};
+var OFTEN={daily:'Daily',weekly:'Weekly, not every day',occasional:'Now and then',never:'Never'},VERD={yes:'Yes',sometimes:'Sometimes',no:'No'};
 var P=new URLSearchParams(location.search),sel=document.getElementById('sp'),inp=document.getElementById('q'),list=document.getElementById('ls'),out=document.getElementById('out'),chips=document.getElementById('chips'),all=document.getElementById('all');
 var POP=['bananas','apples','carrots','grapes','strawberries','cucumber','broccoli','cheese','bread','chocolate','eggs','tomatoes','blueberries','lettuce','peanut butter','onions'];
 function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim()}
